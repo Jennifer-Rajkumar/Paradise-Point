@@ -33,5 +33,7 @@ public class ParadisePointApplication {
 	public static void main(String[] args) {			       
 		SpringApplication.run(ParadisePointApplication.class, args);
 		logger.info("Logged in on : " + new Date());
+		
 	}
 }
+  
