@@ -144,7 +144,7 @@ ul ul a {
 
 ul.CTAs {
     padding: 20px;
-    cursor: crosshair;
+    cursor: grab;
 }
 
 ul.CTAs a {
