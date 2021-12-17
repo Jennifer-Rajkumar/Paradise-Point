@@ -197,6 +197,14 @@ a.article:hover {
 .c :hover{
   cursor: crosshair;
 }
+.my-custom-scrollbar {
+/* position: relative; */
+height: 400px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
   </style>
 </head>
 
@@ -419,6 +427,7 @@ a.article:hover {
           style="display: block; margin-left: auto; margin-right: auto; width: 60px;" />
         <h3 style="text-align: center;color: crimson;">Services Available</h3>
         <!--users display-->
+        <div class="table-wrapper-scroll-y my-custom-scrollbar">
         <table class="table table-striped" style="width: 90%;margin-left: 5%;margin-right: 5%;">
             <thead>
               <tr>
@@ -442,7 +451,7 @@ a.article:hover {
                  </c:forEach>
             </tbody>
           </table>
-       
+          </div>       
 
           
         </div>
