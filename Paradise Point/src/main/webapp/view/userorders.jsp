@@ -168,6 +168,14 @@ a.article:hover {
 .c :hover{
   cursor: grab;
 }
+.my-custom-scrollbar {
+/* position: relative; */
+height: 1000px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
   </style>
 </head>
 <body>
@@ -245,6 +253,7 @@ a.article:hover {
             style="display: block; margin-left: auto; margin-right: auto; width: 70px;margin-top:-20px;" />
           <h3 style="text-align: center;color: crimson;">Orders Display</h3>
           <!--users display-->
+          <div class="table-wrapper-scroll-y my-custom-scrollbar">
           <table class="table table-striped" style="width: 90%;margin-left: 5%;margin-right: 5%;">
               <thead>
                 <tr>
@@ -279,6 +288,7 @@ a.article:hover {
 		
               </tbody>
             </table>
+            </div>
         </div>
     </div>
 </body>
