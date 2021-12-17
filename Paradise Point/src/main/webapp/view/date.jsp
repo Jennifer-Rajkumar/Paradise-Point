@@ -421,7 +421,9 @@ ul
     </div>
   </div>
   <div class="copyright container-fluid">Copyrights @ <span style="color:rgb(122, 13, 13)">ParadisePoint </span>| 2021 All rights reserved</div>
-  
+  <script>
+    document.getElementById('date').min = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
+</script>
 
 <!--footer ends-->
       <!--footer ends-->
