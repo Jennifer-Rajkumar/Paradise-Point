@@ -325,7 +325,7 @@ a.article:hover {
           </div>
           <br>
           <hr>
-          <img src="https://lh3.googleusercontent.com/proxy/fS3ODK2Ha_sxJ_vP0MsNdDPlQMzNS7dEXAolj246SIXWTF-TLkEPfwhxHbr_23kyqwLJmRpiCUI5-W-bROKKE2M"
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Icons8_flat_calendar.svg/1200px-Icons8_flat_calendar.svg.png"
 			style="display: block; margin-left: auto; margin-right: auto; width: 43px;margin-bottom:10px;" />
           <h3 style="text-align: center;color: crimson;">Dates Available</h3>
           <!--users display-->
