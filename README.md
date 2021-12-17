@@ -1,4 +1,5 @@
-![alt text](https://i.ibb.co/2g4tjMf/Paradise-modified.png) # Paradise-Point
+![alt text](https://i.ibb.co/2g4tjMf/Paradise-modified.png) 
+# Paradise-Point
 An Event Management web application to book party halls and services
 
 URL : /
