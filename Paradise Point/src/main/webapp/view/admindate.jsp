@@ -317,8 +317,6 @@ a.article:hover {
                        ${msg}
                       </div>
                      </div>
-
-
               </div>             
                </div>
 
@@ -399,10 +397,7 @@ a.article:hover {
                </c:forEach>
  
               </tbody>
-            </table>
-            
-
-          
+            </table>          
         </div>
     </div>
 <script>
