@@ -13,7 +13,6 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-//https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4NY8Ph6TLbIZzMJcqls9j2HCAOPY7sAbrucNU0wMH8U6zOqxFKmytILWHQlz6UaD0KQZjyL85rVOwzy1gagmX5ohVlgQA
 public class MailService {
 	
 	public Session Authentication() {
@@ -38,6 +37,7 @@ public class MailService {
 		return session;
 		
 	}
+	
 	
 	public void Notification(String toEmail, int purchaseid) {
 		
@@ -71,6 +71,49 @@ public class MailService {
 			//Attachment body part.
 			String pdfName=purchaseid+".pdf";
 			attach.attachFile(pdfName);
+			
+			//Attach multipart to message
+			msg.setContent(emailContent);
+			
+			Transport.send(msg);
+			System.out.println("Sent message");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+    public void NotificationToAdmin() {
+		
+		String email = "paradisepoint.event@gmail.com";
+		
+		Session session = Authentication();
+		
+		//Start our mail message
+		MimeMessage msg = new MimeMessage(session);
+		try {
+			//Scanner sc = new Scanner(System.in);
+			
+			msg.setFrom(new InternetAddress(email));
+			
+			msg.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
+			
+			msg.setSubject("Paradise Point | Report");
+			
+			Multipart emailContent = new MimeMultipart();
+			
+			//Text body part
+			MimeBodyPart textBodyPart = new MimeBodyPart();
+			textBodyPart.setText("Please find the attachment for user orders' report.");
+			
+			MimeBodyPart attach = new MimeBodyPart();
+			
+			//Attach body parts
+			emailContent.addBodyPart(textBodyPart);
+			emailContent.addBodyPart(attach);
+			
+			//Attachment body part.
+			String excelName="OrdersReport.xlsx";
+			attach.attachFile(excelName);
 			
 			//Attach multipart to message
 			msg.setContent(emailContent);
