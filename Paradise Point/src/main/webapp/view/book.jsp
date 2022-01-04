@@ -295,26 +295,27 @@ ul
               </tr>
               <c:set var="serialNo" value="1" scope="page"/>
               <c:forEach items="${dates}" var="date">
-               <form:form action="${contextPath}/${date}-service2" method="POST">
-                <tr>
-                <td>${serialNo }</td>
-                <td>${date}</td>
-                <td> <input type="submit" class="btn btn-success" value="Book now"/></td>
-                
-                <%-- <td><button class="btn btn-success" ><a href="<c:url value='/user/${date}-service2' />">Book now</a></button> --%>
-        
-                <c:set var="serialNo" value="${serialNo + 1}" scope="page"/>
-               </tr>
-               <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-               </form:form>     
+                <jsp:useBean id="now" class="java.util.Date"/>
+
+					<c:if test="${date ge now}">			  
+					
+		               <form:form action="${contextPath}/${date}-service2" method="POST">
+		                <tr>
+		                <td>${serialNo }</td>
+		                <td>${date}</td>
+		                <td> <input type="submit" class="btn btn-success" value="Book now"/></td>
+		                
+		                <%-- <td><button class="btn btn-success" ><a href="<c:url value='/user/${date}-service2' />">Book now</a></button> --%>
+		        
+		                <c:set var="serialNo" value="${serialNo + 1}" scope="page"/>
+		               </tr>
+		               <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+		               </form:form>  
+                    </c:if>   
           
-   </c:forEach>
-      
-              
-              
-              
-              
-              </table>
+             </c:forEach>
+               
+           </table>
 
           
        </div>
