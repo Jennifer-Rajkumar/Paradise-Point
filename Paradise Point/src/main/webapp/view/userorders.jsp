@@ -248,13 +248,22 @@ display: block;
                     </div>
                 </div>
             </nav>
-            <img src="https://i.ibb.co/2g4tjMf/Paradise-modified.png" width="90px" height="90px" style="position:fixed;margin-top:-20px;">
+            <img src="https://i.ibb.co/2g4tjMf/Paradise-modified.png" width="90px" height="90px" style="position:relative;margin-top:-20px;">
           <img src="https://www.pngall.com/wp-content/uploads/5/Red-Shopping-Cart-PNG.png"
-            style="display: block; margin-left: auto; margin-right: auto; width: 70px;margin-top:-20px;" />
+            style="display: block; margin-left: auto; margin-right: auto; width: 70px;margin-top:-9%;" />
           <h3 style="text-align: center;color: crimson;">Orders Display</h3>
           <!--users display-->
+          
+          <form:form id="download" action="/admin/generateReport" method="post">             
+               <input type="submit" class="btn btn-secondary" value="Send Report" style="position:relative;margin-top:-12%;margin-left:80%;"/> 
+            
+          </form:form> 
+                
+         
+        
+          
           <div class="table-wrapper-scroll-y my-custom-scrollbar">
-          <table class="table table-striped" style="width: 90%;margin-left: 5%;margin-right: 5%;">
+          <table id="tblCustomers" class="table table-striped" style="width: 90%;margin-left: 5%;margin-right: 5%;">
               <thead>
                 <tr>
                   <th>S.No</th>
@@ -288,6 +297,16 @@ display: block;
 		
               </tbody>
             </table>
+            <input type="button" id="btnExport" value="Export" onclick="Export()" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="table2excel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function Export() {
+            $("#tblCustomers").table2excel({
+                filename: "Table.xls"
+            });
+        }
+    </script>
             </div>
         </div>
     </div>
