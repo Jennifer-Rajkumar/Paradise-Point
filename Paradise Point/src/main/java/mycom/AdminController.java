@@ -1,8 +1,8 @@
 package mycom;
 
+
 import java.sql.Date;
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.components.UserValidator;
+
+import com.components.ExcelGeneration;
+import com.components.MailService;
 import com.model.BookingDTO;
 import com.model.CompKey;
 import com.model.HallDTO;
@@ -28,7 +30,6 @@ import com.service.HallService;
 import com.service.PartyService;
 import com.service.PurchaseMasterService;
 import com.service.PurchaseTransService;
-import com.service.SecurityService;
 import com.service.ServiceService;
 import com.service.TransferService;
 import com.service.UserOrderService;
@@ -65,11 +66,11 @@ public class AdminController {
 	@Autowired
 	private UserService userservice;
 
-	@Autowired
-	private SecurityService securityService;
-
-	@Autowired
-	private UserValidator userValidator;
+//	@Autowired
+//	private SecurityService securityService;
+//
+//	@Autowired
+//	private UserValidator userValidator;
 
 	@GetMapping("/home")
     public String adminHome() {
@@ -103,8 +104,23 @@ public class AdminController {
 	public String orders(HttpServletRequest request, ModelMap model) {
 		List<UserOrders> user=userorderservice.findAll();
 		model.addAttribute("userorders", user);
+		
 		return "userorders";
 	}
+	
+	@PostMapping("/generateReport")
+	public String generateReport(HttpServletRequest request,ModelMap model) {
+    	List<UserOrders> user=userorderservice.findAll();
+    	ExcelGeneration excel=new ExcelGeneration();
+		excel.WriteFile(user);
+		MailService ms=new MailService();
+		ms.NotificationToAdmin();
+		model.addAttribute("userorders", user);
+		return "userorders";
+	}
+	
+	
+	
 	@RequestMapping("/party")
 	public String party(ModelMap model) {
 		List<PartyDTO> parties = partyservice.display();
