@@ -1,0 +1,8 @@
+insert into party(partyname,partyimg) values("Birthday Party","https://cdn.venuelook.com/images/new-home-images/cake.png");
+insert into party(partyname,partyimg) values("Engagement","https://cdn.venuelook.com/images/new-home-images/ring.png");
+insert into party(partyname,partyimg) values("Wedding","https://cdn.venuelook.com/images/new-home-images/wedding.png");
+insert into party(partyname,partyimg) values("Reception","https://cdn4.vectorstock.com/i/thumb-large/80/08/wedding-reception-rgb-color-icon-vector-35758008.jpg");
+insert into party(partyname,partyimg) values("Banquet Party","https://cdn.venuelook.com/images/new-home-images/banquet.png");
+insert into party(partyname,partyimg) values("Conference","https://www.pngitem.com/pimgs/m/178-1780359_how-will-your-audience-feel-about-all-this.png");
+insert into party(partyname,partyimg) values("Get Together","https://cdn.venuelook.com/images/new-home-images/kitty.png");
+insert into party(partyname,partyimg) values("Corporate party","https://cdn.venuelook.com/images/new-home-images/ofc-party.png");

@@ -1,0 +1,8 @@
+insert into hall values(1,5000,1500,20000,"https://www.redelephantreps.com/wp-content/uploads/2019/11/sokha-wedding-1.jpg");
+insert into hall values(2,4000,1000,15000,"https://5.imimg.com/data5/YD/BE/SS/SELLER-10323695/grand-wedding-hall-500x500.jpg");
+insert into hall values(3,4500,1200,13000,"https://image.wedmegood.com/resized/800X/uploads/member/691744/1567158626_Screenshot_5.jpg");
+insert into hall values(4,3000,800,12000,"https://media.weddingz.in/images/a72808402a1d05ebdfac8cd55a188aa6/small-banquet-halls-in-bangalore-to-host-happening-parties-you-cant-keep-calm-here.jpg");
+insert into hall values(5,2000,500,9000,"https://media.weddingz.in/images/8674f112d0f5ec5d60a684a2c5b3fe9d/top-10-banquet-halls-in-bangalore-3.jpg");
+insert into hall values(6,1000,200,5000,"https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdlZGRpbmclMjB2ZW51ZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+
+

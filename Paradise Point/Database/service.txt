@@ -1,0 +1,77 @@
+create table service(partyid int,serviceid int,servicecost decimal(7,2),serviceimg varchar(1000),servicename varchar(50),primary key (partyid,serviceid));
+
+insert into service values(1,1,2000,"http://3.bp.blogspot.com/-R44MT2ozVUU/UaTRvjJEVGI/AAAAAAAAAPE/QOmbxEs37Kw/s1600/0.jpg","Birthday cake");
+insert into service values(1,2,1500,"https://m.media-amazon.com/images/I/61HsfAI2pJL._SL1100_.jpg","Decoration");
+insert into service values(1,3,3000,"https://c1.wallpaperflare.com/preview/694/911/742/bouncy-castle-air-cushion-inflatable-soft.jpg","Bounce house");
+insert into service values(1,4,8000,"https://media.istockphoto.com/photos/catering-food-wedding-event-table-picture-id650655146?b=1&k=20&m=650655146&s=170667a&w=0&h=tYzhIriE-IzxUv8coABq_hafpVknNckUZqAdRdz7v5E=","Food");
+insert into service values(1,5,7000,"https://image.freepik.com/free-photo/indian-photographer-man-holding-his-camera-white-background_231208-3771.jpg","Photography");
+insert into service values(1,6,5000,"https://media.istockphoto.com/photos/multicolored-and-beribboned-gift-boxes-in-pile-picture-id183510983?k=20&m=183510983&s=612x612&w=0&h=WAY9a_5aXJyqgNdUh2BH01eyB02nufrhKvfwYRev4gE=","Return Gifts");
+insert into service values(1,7,8000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJgxQb1t0hsR9HzOyqch76zNiAjzH2gzk-3lsFGvxIScpsO7LZ4XLq1riIDGj-7z8k0Q&usqp=CAU","Music System");
+insert into service values(1,8,12000,"https://blog.edqart.com/wp-content/uploads/2018/09/Events.jpg","Event Management");
+
+
+
+insert into service values(2,1,4000,"https://i.pinimg.com/550x/ee/9e/58/ee9e58b1af20c537c971fdf3f342c108.jpg","Decoration");
+insert into service values(2,2,8000,"https://i.ytimg.com/vi/9xmZu56ukNg/maxresdefault.jpg","Welcome dance");
+insert into service values(2,3,12000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBD3fXke05Ft74dNlDGqm9gLs44BpCCIGMGVwOlb7d_eI2bWTiUKFyB5fPCGfSDwpuBoM&usqp=CAU","Food");
+insert into service values(2,4,3000,"https://5.imimg.com/data5/BB/DL/GLADMIN-32807164/engagement-cake-w-318-500x500.png","Cake");
+insert into service values(2,5,7000,"https://image.freepik.com/free-photo/indian-photographer-man-holding-his-camera-white-background_231208-3771.jpg","Photography");
+insert into service values(2,6,5000,"https://media.istockphoto.com/photos/multicolored-and-beribboned-gift-boxes-in-pile-picture-id183510983?k=20&m=183510983&s=612x612&w=0&h=WAY9a_5aXJyqgNdUh2BH01eyB02nufrhKvfwYRev4gE=","Return Gifts");
+insert into service values(2,7,8000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJgxQb1t0hsR9HzOyqch76zNiAjzH2gzk-3lsFGvxIScpsO7LZ4XLq1riIDGj-7z8k0Q&usqp=CAU","Music System");
+insert into service values(2,8,12000,"https://blog.edqart.com/wp-content/uploads/2018/09/Events.jpg","Event Management");
+insert into service values(2,9,20000,"https://i.pinimg.com/originals/ab/3c/ac/ab3cac22298cf846727ed916940243de.png","Bridal Makeup");
+insert into service values(2,10,10000,"https://cdn0.weddingwire.in/article/3315/original/1280/jpg/85133-weddingwire-recommends-28-must-have-bridal-make-up-kit-essentials-soulmatefilms-must-haves-for-your-face.jpeg","Family Makeup");
+insert into service values(2,11,7000,"https://5.imimg.com/data5/LF/JV/UA/SELLER-59907676/nadhaswaram-and-thavil-players-500x500.JPG","Band");
+
+insert into service values(3,4,7000,"https://media.istockphoto.com/photos/mehndi-picture-id178086008?b=1&k=20&m=178086008&s=170667a&w=0&h=9KeVBxMuC2Iuf6ZZuUL6vEjDz1Gts8dwCBkH4T9xyko=","Mehendi");
+insert into service values(3,1,4000,"https://i.pinimg.com/550x/ee/9e/58/ee9e58b1af20c537c971fdf3f342c108.jpg","Decoration");
+insert into service values(3,2,8000,"https://i.ytimg.com/vi/9xmZu56ukNg/maxresdefault.jpg","Welcome dance");
+insert into service values(3,3,12000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBD3fXke05Ft74dNlDGqm9gLs44BpCCIGMGVwOlb7d_eI2bWTiUKFyB5fPCGfSDwpuBoM&usqp=CAU","Food");
+insert into service values(3,5,7000,"https://image.freepik.com/free-photo/indian-photographer-man-holding-his-camera-white-background_231208-3771.jpg","Photography");
+insert into service values(3,6,5000,"https://media.istockphoto.com/photos/multicolored-and-beribboned-gift-boxes-in-pile-picture-id183510983?k=20&m=183510983&s=612x612&w=0&h=WAY9a_5aXJyqgNdUh2BH01eyB02nufrhKvfwYRev4gE=","Return Gifts");
+insert into service values(3,7,8000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJgxQb1t0hsR9HzOyqch76zNiAjzH2gzk-3lsFGvxIScpsO7LZ4XLq1riIDGj-7z8k0Q&usqp=CAU","Music System");
+insert into service values(3,8,12000,"https://blog.edqart.com/wp-content/uploads/2018/09/Events.jpg","Event Management");
+insert into service values(3,9,20000,"https://i.pinimg.com/originals/ab/3c/ac/ab3cac22298cf846727ed916940243de.png","Bridal Makeup");
+insert into service values(3,10,10000,"https://cdn0.weddingwire.in/article/3315/original/1280/jpg/85133-weddingwire-recommends-28-must-have-bridal-make-up-kit-essentials-soulmatefilms-must-haves-for-your-face.jpeg","Family Makeup");
+insert into service values(3,11,7000,"https://5.imimg.com/data5/LF/JV/UA/SELLER-59907676/nadhaswaram-and-thavil-players-500x500.JPG","Band");
+
+
+
+insert into service values(4,4,7000,"https://media.istockphoto.com/photos/mehndi-picture-id178086008?b=1&k=20&m=178086008&s=170667a&w=0&h=9KeVBxMuC2Iuf6ZZuUL6vEjDz1Gts8dwCBkH4T9xyko=","Mehendi");
+insert into service values(4,1,4000,"https://i.pinimg.com/550x/ee/9e/58/ee9e58b1af20c537c971fdf3f342c108.jpg","Decoration");
+insert into service values(4,2,8000,"https://i.ytimg.com/vi/9xmZu56ukNg/maxresdefault.jpg","Welcome dance");
+insert into service values(4,3,12000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBD3fXke05Ft74dNlDGqm9gLs44BpCCIGMGVwOlb7d_eI2bWTiUKFyB5fPCGfSDwpuBoM&usqp=CAU","Food");
+insert into service values(4,5,7000,"https://image.freepik.com/free-photo/indian-photographer-man-holding-his-camera-white-background_231208-3771.jpg","Photography");
+insert into service values(4,6,5000,"https://media.istockphoto.com/photos/multicolored-and-beribboned-gift-boxes-in-pile-picture-id183510983?k=20&m=183510983&s=612x612&w=0&h=WAY9a_5aXJyqgNdUh2BH01eyB02nufrhKvfwYRev4gE=","Return Gifts");
+insert into service values(4,7,8000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJgxQb1t0hsR9HzOyqch76zNiAjzH2gzk-3lsFGvxIScpsO7LZ4XLq1riIDGj-7z8k0Q&usqp=CAU","Music System");
+insert into service values(4,8,12000,"https://blog.edqart.com/wp-content/uploads/2018/09/Events.jpg","Event Management");
+insert into service values(4,9,20000,"https://i.pinimg.com/originals/ab/3c/ac/ab3cac22298cf846727ed916940243de.png","Bridal Makeup");
+insert into service values(4,10,10000,"https://cdn0.weddingwire.in/article/3315/original/1280/jpg/85133-weddingwire-recommends-28-must-have-bridal-make-up-kit-essentials-soulmatefilms-must-haves-for-your-face.jpeg","Family Makeup");
+insert into service values(4,11,7000,"https://5.imimg.com/data5/LF/JV/UA/SELLER-59907676/nadhaswaram-and-thavil-players-500x500.JPG","Band");
+insert into service values(4,12,5000,"https://5.imimg.com/data5/CX/MY/EN/SELLER-10335434/007-500x500.jpg","Chaat Corner");
+
+
+insert into service values(5,1,9000,"https://c1.wallpaperflare.com/preview/781/189/69/events-venue-banquet-hall.jpg","Decoration");
+insert into service values(5,2,10000,"https://media.istockphoto.com/photos/choosing-food-picture-id648316070?b=1&k=20&m=648316070&s=170667a&w=0&h=05IkxpBU9sr3Kmsc7ZorYpoFQVTkxxxdlfDyQKDa2z8=","Food");
+insert into service values(5,3,4000,"https://c0.wallpaperflare.com/preview/505/815/775/beverages-carbonated-carbonated-drink-carbonated-water.jpg","Beverages");
+insert into service values(5,4,6000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHc0OmKklKW-uRcO6KIbXUsAokDcfIH6xqVA&usqp=CAU","Sweet Corner");
+
+
+insert into service values(6,1,8000,"https://i.ytimg.com/vi/ooW5Dlfwwv8/maxresdefault.jpg","Decoration");
+insert into service values(6,2,8100,"https://images.unsplash.com/photo-1528395874238-34ebe249b3f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdG9yfGVufDB8fDB8fA%3D%3D&w=1000&q=80","Projector");
+insert into service values(6,3,2000,"https://images7.alphacoders.com/413/thumb-350-413732.jpg","Beverages");
+insert into service values(6,4,3000,"https://wallpaperaccess.com/full/1891213.jpg","Snacks");
+
+
+insert into service values(7,1,7000,"https://i.etsystatic.com/9203669/r/il/13d98b/2162239936/il_fullxfull.2162239936_kbv7.jpg","Decoration");
+insert into service values(7,2,9000,"https://res.klook.com/image/upload/activities/pwzsnsietkg9x8kdhtba.jpg","Food");
+insert into service values(7,3,4500,"https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRyaW5rfGVufDB8fDB8fA%3D%3D&w=1000&q=80","Beverages");
+insert into service values(7,4,3000,"https://i.pinimg.com/736x/83/8f/09/838f09bcc936b94cc0aec28afdc119fd--reunions-cake-decorating.jpg","Cake");
+insert into service values(7,2,9000,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJgxQb1t0hsR9HzOyqch76zNiAjzH2gzk-3lsFGvxIScpsO7LZ4XLq1riIDGj-7z8k0Q&usqp=CAU","Music System");
+
+
+insert into service values(8,1,9000,"https://4.imimg.com/data4/YF/HU/MY-11177007/office-party-decoration-services-500x500.jpg","Decoration");
+insert into service values(8,2,12000,"https://images.unsplash.com/photo-1583338917496-7ea264c374ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMGJ1ZmZldHxlbnwwfHwwfHw%3D&w=1000&q=80","Food");
+insert into service values(8,3,2000,"https://images7.alphacoders.com/413/thumb-350-413732.jpg","Beverages");
+insert into service values(8,4,3000,"https://wallpaperaccess.com/full/1891213.jpg","Snacks");
+insert into service values(8,5,7000,"https://i2.wp.com/www.businessmodulehub.com/wp-content/uploads/2021/06/Vernon-photographer-15fe6ad0.jpg","Photography");
