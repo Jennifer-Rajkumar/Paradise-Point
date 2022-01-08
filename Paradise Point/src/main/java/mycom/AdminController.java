@@ -66,12 +66,6 @@ public class AdminController {
 	@Autowired
 	private UserService userservice;
 
-//	@Autowired
-//	private SecurityService securityService;
-//
-//	@Autowired
-//	private UserValidator userValidator;
-
 	@GetMapping("/home")
     public String adminHome() {
     	if (WebSecurityConfig.isAuthenticated()) {
