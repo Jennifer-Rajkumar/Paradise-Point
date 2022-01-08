@@ -12,6 +12,7 @@ password : secret
 
 database command:\
 create database paradise;
+refer database folder for sql queries
 
 When user creates an account, he/she is consider as 'USER' by default \
 The unlogged users can access the party page(/party) and login page(/login)
